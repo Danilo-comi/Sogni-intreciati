@@ -1,0 +1,80 @@
+body {
+  /* Scegli il colore di sfondo che preferisci per tutta la pagina */
+  background-color: #ece1d9; /* stessa sfumatura del coniglio */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita lo scorrimento orizzontale */
+  /* Il browser cercherà il font "Photoshoot" tra quelli installati nel sistema */
+  font-family: "Photoshoot", sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none; /* toglie la sottolineatura */
+  border: none; /* toglie il bordo*/
+  border-radius: 10px;
+  background-color: transparent;
+  color: red;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin-inline: 10px;
+  font-family: "Photoshoot", sans-serif;
+}
+
+.bottoni {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  gap: 5px;
+  margin: 50px 20px 50px 0;
+}
+
+/* 1. Crea la griglia che unisce gli elementi nello stesso spazio */
+.mio-banner {
+  display: grid;
+  width: 100%;
+  max-width: 700px; /* Puoi ridimensionare il box modificando questo valore */
+  margin: 0 auto; /* Centra il box nella pagina */
+  position: relative;
+  margin-top: 20px;
+}
+
+.mio-banner > * {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.mio-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* La magia avviene qui */
+.testo-sovrapposto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Spinge il titolo in alto e il blocco dei paragrafi in basso */
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+  width: 100vw; /* Larghezza 100% della finestra del browser */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  box-sizing: border-box;
+}
+
+/* Stili del testo */
+.testo-sovrapposto h1 {
+  font-size: 150px;
+  color: #333333;
+  margin-top: -90px;
+  padding: 20px;
+}
