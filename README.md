@@ -1,2 +1,2 @@
 # Sogni-intreciati
-Sito web e commerce 
+Sito web e-commerce 
