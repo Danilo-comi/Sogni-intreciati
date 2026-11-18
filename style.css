@@ -158,3 +158,116 @@ a {
 .img-cestino {
   display: flex;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Stili per le pagine legali (Privacy, Cookie, Termini) */
+.legal-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 1.5rem;
+}
+
+.legal-header-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-link {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #111827;
+  text-decoration: none;
+}
+
+.back-link {
+  font-size: 0.9rem;
+  color: #4b5563;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  color: #111827;
+  text-decoration: underline;
+}
+
+.legal-page {
+ background-color: transparent;
+  padding: 3rem 1.5rem;
+  min-height: 70vh;
+}
+
+.legal-content {
+  max-width: 800px; /* Larghezza ideale per la lettura di testi lunghi */
+  margin: 0 auto;
+  background-color: #F6F1EC;
+  border: 1px solid #D5C8BC;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #374151;
+  line-height: 1.7;
+}
+
+.legal-content h1 {
+  font-size: 2rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.last-updated {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.legal-content section {
+  margin-bottom: 1.75rem;
+}
+
+.legal-content h2 {
+  font-size: 1.25rem;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.legal-content p,
+.legal-content ul {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.legal-content ul {
+  padding-left: 1.5rem;
+}
