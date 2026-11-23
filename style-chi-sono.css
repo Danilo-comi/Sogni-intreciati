@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'Photoshoot';
+  src: url('Font/Photoshoot.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   2. RESET BASE E LISTE
+   Fa sì che bordi e padding rientrino nella larghezza impostata (box-sizing)
+   e rimuove i pallini/numeri predefiniti da liste puntate e numerate.
+   ========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* ==========================================================================
+   3. SFONDO E STILI GENERALI DELLA PAGINA (BODY)
+   Imposta sfondo crema, pattern a puntini SVG ripetuto, font principale,
+   colore testo e blocco dello scorrimento orizzontale.
+   ========================================================================== */
+body {
+  background-color: #EDE5DD;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Ccircle cx='18' cy='24' r='1.1' fill='%234A433E' opacity='0.65'/%3E%3Ccircle cx='75' cy='15' r='0.8' fill='%23C4B9AE' opacity='0.8'/%3E%3Ccircle cx='105' cy='48' r='1.3' fill='%234A433E' opacity='0.5'/%3E%3Ccircle cx='42' cy='68' r='0.9' fill='%23C4B9AE' opacity='0.9'/%3E%3Ccircle cx='88' cy='92' r='1.2' fill='%234A433E' opacity='0.6'/%3E%3Ccircle cx='15' cy='98' r='0.7' fill='%234A433E' opacity='0.5'/%3E%3Ccircle cx='62' cy='45' r='0.8' fill='%234A433E' opacity='0.4'/%3E%3Ccircle cx='32' cy='112' r='1' fill='%23C4B9AE' opacity='0.75'/%3E%3Ccircle cx='112' cy='105' r='0.8' fill='%23C4B9AE' opacity='0.85'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  color: #38312C;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Photoshoot", sans-serif;
+}
+
+/* ==========================================================================
+   4. LINK E MENU DI NAVIGAZIONE
+   Definisce l'aspetto dei link (<a>) e centra le due righe del menu superiore.
+   ========================================================================== */
+a {
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  color: red;
+  font-size: 24px;
+  margin-inline: 10px;
+  font-family: "Photoshoot", sans-serif;
+  transition: opacity 0.2s ease;
+}
+
+
+.bottoni {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px;
+  gap: 15px;
+}
+
+.banner-sopra,
+.banner-sotto {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+}
+
+/* ==========================================================================
+   5. BANNER PRINCIPALE CON TESTO SOVRAPPOSTO
+   Usa una griglia a una cella (.mio-banner) per sovrapporre il titolo <h1>
+   sopra l'immagine del cestino mantenendo tutto centrato.
+   ========================================================================== */
+.mio-banner {
+  display: grid;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto 0 auto;
+  position: relative;
+}
+
+.mio-banner>* {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.mio-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.testo-sovrapposto {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+  width: 100%;
+  z-index: 1;
+  
+}
+
+.testo-sovrapposto h1 {
+  font-size: clamp(48px, 12vw, 150px);
+  color: #A46B66;
+  margin: 0;
+  line-height: 1;
+}
+
+.mio-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/*iniziamo con la parte dei testi e delle foto*/
+
+.descrizione {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  font-size: 30px;
+  margin: auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #383737;
+  margin: auto;
+  color: antiquewhite;
+}
+
+.hero img {
+  width: 100%;
+}
+
+
+.testo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px;
+}
+
+.testo h2 {
+  font-size: 60px;
+}
+
+.testo p {
+  font-size: 30px;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #A46B66;
+  margin: auto;
+  color: antiquewhite;
+}
+
+.recensione {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: black;
+}
+ .recensione h2{
+font-size: 45px;}
+
+.recensione p{
+font-size: 40px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
