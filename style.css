@@ -17,10 +17,8 @@ body {
 }
 
 a {
-  text-decoration: none;
-  /* toglie la sottolineatura */
-  border: none;
-  /* toglie il bordo*/
+  text-decoration: none; /* toglie la sottolineatura */
+  border: none;  /* toglie il bordo*/
   border-radius: 10px;
   background-color: transparent;
   color: red;
