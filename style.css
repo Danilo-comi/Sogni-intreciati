@@ -179,9 +179,65 @@ a {
   display: flex;
 }
 
+.banner-check {
+  width: 100%;
+  background-color: #000000;
+  color: #FFFFFF;
+  overflow: hidden;
+  padding: 12px 0;
+}
 
+.banner-traccia {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  animation: scorrimento-banner 30s linear infinite;
+}
 
+.banner-gruppo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
+.banner-gruppo li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  padding: 0 28px;
+  font-size: clamp(14px, 1.8vw, 18px);
+}
+
+.banner-gruppo .check {
+  font-weight: bold;
+}
+
+@keyframes scorrimento-banner {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .banner-traccia {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .banner-gruppo[aria-hidden="true"] {
+    display: none;
+  }
+}
 
 
 
