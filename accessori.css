@@ -74,6 +74,24 @@ h1 {
     margin: 0;
 }
 
+button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: inherit;
+    cursor: pointer;
+    background-color: rgb(255, 255, 190);
+    border: 0cap;
+    border-radius: 20px;
+    gap: 6px;
+    min-height: 44px;
+    padding: 10px 18px;
+    max-width: 100%;
+    font-family: inherit;
+    font-size: 24px;
+    /* aumenta solo il simbolo del carrello */
+    line-height: 1;
+}
 
 
 img,
@@ -130,6 +148,24 @@ ol li {
 
 }
 
+.giostrina .testi li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 8px 0;
+}
+
+.giostrina .prezzo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    /* tiene prezzo e carrello uniti e allineati sulla destra */
+    flex-shrink: 0;
+    /* impedisce al secondo punto di schiacciare o spostare il carrello */
+}
+
 .giostrina img {
     flex: 0 1 33.333%;
     max-width: 100%;
@@ -137,30 +173,13 @@ ol li {
     display: block;
 }
 
-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-family: inherit;
-    cursor: pointer;
-    background-color: rgb(255, 255, 190);
-    border: 0cap;
-    border-radius: 20px;
-    gap: 6px;
-    min-height: 44px;
-    padding: 10px 18px;
-    max-width: 100%;
-    font-family: inherit;
-    font-size: 24px;
-    /* aumenta solo il simbolo del carrello */
-    line-height: 1;
-}
+
 
 .catenella {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 18px;
+    gap: 8px;
     align-items: center;
     justify-content: space-between;
 }
@@ -168,7 +187,27 @@ button {
 .catenella .testi {
     flex: 1 1 320px;
     padding-right: 30px;
+    min-width: 0;
+}
 
+
+
+.catenella .testi li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 8px 0;
+}
+
+.catenella .prezzo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    /* tiene prezzo e carrello uniti e allineati sulla destra */
+    flex-shrink: 0;
+    /* impedisce al secondo punto di schiacciare o spostare il carrello */
 }
 
 .anellino {
@@ -180,10 +219,24 @@ button {
     gap: 18px;
 }
 
-.anellino .testi{
-flex: 1 1 320px;
-padding-left: 30px;
-max-width: 75%;
+.anellino .testi {
+    flex: 1 1 320px;
+    padding-left: 30px;
+
+}
+
+.fiocco {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.fiocco .testi  {
+    flex: 1 1 320px;
+    padding: 30px;
 }
 
 
