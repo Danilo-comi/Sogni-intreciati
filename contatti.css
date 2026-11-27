@@ -17,8 +17,10 @@ body {
 }
 
 a {
-  text-decoration: none; /* toglie la sottolineatura */
-  border: none;  /* toglie il bordo*/
+  text-decoration: none;
+  /* toglie la sottolineatura */
+  border: none;
+  /* toglie il bordo*/
   border-radius: 10px;
   background-color: transparent;
   color: red;
@@ -51,4 +53,94 @@ a {
   align-items: center;
   gap: 5px;
   margin: 0;
+}
+
+/* fino a qui si può usare su tutti i css, è lo sfondo e i tasti di navigazione in alto */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   7. FOOTER
+   ========================================================================== */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 30px 20px;
+  margin-top: 40px;
 }
